@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, 
-         ScatterChart, Scatter, ZAxis, Cell, LineChart, Line, PieChart, Pie } from 'recharts';
+import { 
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
+  ScatterChart, Scatter, ZAxis, Cell, LineChart, Line, PieChart, Pie 
+} from 'recharts';
 
 const QuantumFractalAnalysis = () => {
   const [activeTab, setActiveTab] = useState('categories');
