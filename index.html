@@ -150,21 +150,130 @@
                         </div>
                     </div>
 
-                    <div class="metrics-explanation">
-                        <h4>Metrics Explained</h4>
-                        <dl>
-                            <dt>Quantum Fidelity</dt>
-                            <dd>Measures coherence with the universal fractal structure (0-1)</dd>
-                            <dt>Stability Index</dt>
-                            <dd>Resistance to perturbation in the resonance field</dd>
-                            <dt>Entropy</dt>
-                            <dd>Information-theoretic complexity of the problem's solution space</dd>
-                            <dt>CQC Score</dt>
-                            <dd>Composite Quantum Coherence - weighted combination of all metrics</dd>
-                        </dl>
+                    <div class="guardians-section">
+                        <h4 class="expandable-header" onclick="this.parentElement.classList.toggle('expanded')">
+                            <span class="expand-icon">+</span>
+                            The 6 Guardians of FRO
+                        </h4>
+                        <div class="expandable-content">
+                            <div class="guardian-mini phi" onclick="this.classList.toggle('detail-open')">
+                                <span class="symbol">φ</span>
+                                <div class="info">
+                                    <strong>Golden Ratio</strong> = 1.6180339887...
+                                    <p class="summary">Guards NP class. α_NP = φ + ¼ = 1.868...</p>
+                                    <div class="detail-content">
+                                        <p>The golden ratio emerges naturally in the fractal structure of NP-complete problems. It governs the resonance threshold that separates tractable from intractable computation. Problems with α near φ+¼ exhibit exponential complexity growth.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guardian-mini sqrt2" onclick="this.classList.toggle('detail-open')">
+                                <span class="symbol">√2</span>
+                                <div class="info">
+                                    <strong>Square Root of 2</strong> = 1.4142135623...
+                                    <p class="summary">Guards P class. α_P = √2</p>
+                                    <div class="detail-content">
+                                        <p>The diagonal of the unit square represents polynomial-time solvability. Problems with resonance parameters near √2 exhibit efficient algorithmic solutions. This is the "safe zone" of computational complexity.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guardian-mini pi" onclick="this.classList.toggle('detail-open')">
+                                <span class="symbol">π</span>
+                                <div class="info">
+                                    <strong>Pi</strong> = 3.1415926535...
+                                    <p class="summary">Scales eigenvalue: λ₀ = π/(10α)</p>
+                                    <div class="detail-content">
+                                        <p>Pi governs the circular symmetry of the fractal resonance field. It determines how eigenvalues propagate through the problem space, creating the characteristic spiral patterns seen in complexity transitions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guardian-mini alpha" onclick="this.classList.toggle('detail-open')">
+                                <span class="symbol">α</span>
+                                <div class="info">
+                                    <strong>Alpha Parameters</strong>
+                                    <p class="summary">α_P = √2, α_NP = φ + ¼</p>
+                                    <div class="detail-content">
+                                        <p>Each mathematical problem has a unique alpha parameter that determines its position in the complexity hierarchy. These "resonance fingerprints" reveal hidden connections between seemingly unrelated problems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guardian-mini ch2" onclick="this.classList.toggle('detail-open')">
+                                <span class="symbol">CH₂</span>
+                                <div class="info">
+                                    <strong>Coherence Threshold</strong> = 0.95398...
+                                    <p class="summary">Boundary separating P from NP</p>
+                                    <div class="detail-content">
+                                        <p>The CH₂ threshold marks the quantum coherence level at which computational complexity undergoes a phase transition. Problems above this threshold exhibit NP-hard characteristics; below it, polynomial solutions exist.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guardian-mini d3" onclick="this.classList.toggle('detail-open')">
+                                <span class="symbol">D₃</span>
+                                <div class="info">
+                                    <strong>Digital Sum Function</strong>
+                                    <p class="summary">Oracle-independent fractal function</p>
+                                    <div class="detail-content">
+                                        <p>D₃ encodes the fractal structure that remains invariant regardless of which computational oracle is used. This makes it fundamental to the FRO framework's relativization properties and connects all complexity classes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <p class="hint">Hover over nodes to see details. Drag to reposition. Scroll to zoom.</p>
+                    <div class="metrics-explanation">
+                        <h4 class="expandable-header" onclick="this.parentElement.classList.toggle('expanded')">
+                            <span class="expand-icon">+</span>
+                            Quantum Coherence Values
+                        </h4>
+                        <div class="expandable-content">
+                            <div class="coherence-scale">
+                                <div class="scale-bar">
+                                    <div class="scale-segment p-zone"><span class="scale-label">P Zone</span></div>
+                                    <div class="scale-segment transition-zone"><span class="scale-label">Trans.</span></div>
+                                    <div class="scale-segment np-zone"><span class="scale-label">NP Zone</span></div>
+                                </div>
+                                <div class="scale-markers">
+                                    <span>0</span>
+                                    <span>0.3</span>
+                                    <span>0.5</span>
+                                    <span>CH₂</span>
+                                    <span>1.0</span>
+                                </div>
+                            </div>
+                            <dl>
+                                <dt>Quantum Fidelity (0-50)</dt>
+                                <dd>Measures alignment with the universal fractal resonance pattern. Values near 25 suggest P-class behavior; above 40 indicates NP-hardness potential.</dd>
+                                <dt>Stability Index (0-1)</dt>
+                                <dd>Resistance to perturbation. Stable problems (>0.7) maintain their complexity class under parameter changes; unstable (<0.3) may exhibit phase transitions.</dd>
+                                <dt>Entropy (0-2.5)</dt>
+                                <dd>Information-theoretic complexity of the solution space. Low entropy (<0.5) = few valid solutions; high entropy (>2.0) = rich, complex solution landscape.</dd>
+                                <dt>CQC Score</dt>
+                                <dd>Composite Quantum Coherence - the overall "fractal fingerprint" combining all metrics. Higher CQC indicates stronger resonance with the universal structure.</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="metrics-explanation">
+                        <h4 class="expandable-header" onclick="this.parentElement.classList.toggle('expanded')">
+                            <span class="expand-icon">+</span>
+                            Interpreting the Visualization
+                        </h4>
+                        <div class="expandable-content">
+                            <dl>
+                                <dt>Node Size</dt>
+                                <dd>Larger nodes have higher quantum fidelity, indicating stronger resonance with the fractal structure.</dd>
+                                <dt>Node Color</dt>
+                                <dd>Purple nodes are topology/core problems. Other colors represent different mathematical fields.</dd>
+                                <dt>Gold Rings</dt>
+                                <dd>Indicate solved problems - their solutions validate the FRO predictions.</dd>
+                                <dt>Link Thickness</dt>
+                                <dd>Thicker connections show stronger similarity in fractal resonance signatures.</dd>
+                                <dt>Link Color</dt>
+                                <dd>Magenta links connect topology-related problems; blue links connect others.</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <p class="hint">Hover over nodes to see details. Drag to reposition. Scroll to zoom. Click headers to expand.</p>
                 </div>
 
                 <div id="node-info" class="info-content" style="display: none;">
