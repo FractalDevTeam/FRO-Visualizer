@@ -1108,3 +1108,88 @@ input[type="range"]::-moz-range-thumb {
 
 .guardian-mini.d3 { border-color: #ffaa44; }
 .guardian-mini.d3 .symbol { color: #ffaa44; }
+
+/* Guardian Click-to-Expand Details */
+.guardian-mini {
+    cursor: pointer;
+}
+
+.guardian-mini .detail-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-slow), margin-top var(--transition-fast);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+.guardian-mini.detail-open .detail-content {
+    max-height: 200px;
+    margin-top: var(--space-sm);
+}
+
+.guardian-mini.detail-open {
+    background: rgba(0, 0, 0, 0.5);
+    border-left-width: 4px;
+}
+
+.guardian-mini .summary {
+    transition: opacity var(--transition-fast);
+}
+
+/* Coherence Scale Visualization */
+.coherence-scale {
+    margin-bottom: var(--space-md);
+    padding: var(--space-md);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: var(--radius-sm);
+}
+
+.scale-bar {
+    display: flex;
+    height: 24px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-bottom: var(--space-xs);
+}
+
+.scale-segment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.scale-segment.p-zone {
+    flex: 3;
+    background: linear-gradient(90deg, #00aa44, #44cc88);
+    color: white;
+}
+
+.scale-segment.transition-zone {
+    flex: 2;
+    background: linear-gradient(90deg, #ccaa00, #ffcc44);
+    color: #333;
+}
+
+.scale-segment.np-zone {
+    flex: 5;
+    background: linear-gradient(90deg, #cc4444, #ff6666);
+    color: white;
+}
+
+.scale-label {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.scale-markers {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    padding: 0 2px;
+}

@@ -356,8 +356,16 @@ function createVisualization() {
         .style("opacity", state.showLabels ? 0.8 : 0)
         .style("pointer-events", "none");
 
-    // Update simulation on tick
+    // Update simulation on tick with bounds checking
     state.simulation.on("tick", () => {
+        // Clamp node positions to stay within visualization bounds
+        const padding = 30;
+        state.nodes.forEach(d => {
+            const radius = getNodeRadius(d);
+            d.x = Math.max(padding + radius, Math.min(state.width - padding - radius, d.x));
+            d.y = Math.max(padding + radius, Math.min(state.height - padding - radius, d.y));
+        });
+
         link
             .attr("x1", d => d.source.x)
             .attr("y1", d => d.source.y)
